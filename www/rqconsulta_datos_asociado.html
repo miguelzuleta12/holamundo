@@ -1,0 +1,47 @@
+﻿
+<section class="contact_area section-padding" id="contact">
+    <div class="container">
+	    <div class="row">
+		    <div class="col-xs-12 col-sm-10 col-text-center">
+			    <div class="section-title text-center">
+				    <h2>Datos Asociado</h2>
+				    <hr class="t_underline"/>
+			    </div>
+		    </div>
+	    </div>
+	    <div class="row">
+		    <div class="col-xs-12 col-sm-12">
+			    <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="single_input">
+                            <span>TIPO DE DOCUMENTO</span>
+                            <div class="input-group">
+                                <select id="tipoDocumento" class="form-control">
+                                    <option value="0">Seleccione una opción</option>
+                                    <option value="1">Cedula</option>
+                                    <option value="2">Tarjeta de identidad</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+				    <div class="col-xs-12 col-sm-4">
+					    <div class="single_input">
+						    <span>IDENTIFICACION</span>
+						    <div class="input-group">							    
+							    <input type="text" id="id" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+						    </div>
+					    </div>
+				    </div>				    
+		        </div>
+                <div class="row">
+                    <div class="single_input">                        
+                        <div class="input-group">
+                            <span id="mensajeAsociado"></span>                            
+                        </div>
+                    </div>
+                </div>
+		    </div>
+		    <input class="text-center" type="button" value="ENVIAR" onclick="validateAsso('rsconsulta_datos_asociado.html')"/>
+        </div>					
+    </div>			
+</section>

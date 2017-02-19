@@ -695,7 +695,7 @@ input[type="button"]:hover {
   font-family: roboto;
   line-height: 28px;
 }
-.s_footer_t p,.s_footer_t .info_text ul li ,.s_footer_t .info_text a,.copyright p,.s_footer_t a i {color: rgb(205, 222, 238);}
+.s_footer_t p,.s_footer_t .info_text ul li ,.s_footer_t .info_text a,.copyright p,.s_footer_t a i {color: #fff;}
 /*----------------------------------
 [11.2 footer bottom]
 -----------------------------------*/
@@ -704,6 +704,13 @@ input[type="button"]:hover {
   margin: 0;
   padding: 20px 0;
 }
+
+
+.mobile-menu-area a{
+
+    float: left;
+}
+
 /*-------------------------------------------------------------------
 								[END]
 --------------------------------------------------------------------*/

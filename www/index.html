@@ -47,49 +47,32 @@
     </head>
   <body  data-spy="scroll" data-target="#navbar-example">
         <!-- header section start -->
-			<header>
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-2">
-							<div class="logo" style="padding: 9px 13px 11px;">
-                                <!--
-								<a href="index.html"><img src="images/logo.png" alt="" /></a>
-                                -->
-                                <a href="index.html" style="font-size: 20px;line-height: 18px;font-weight: 400;font-family: 'OpenSans', sans-serif;color: #FFF; font-weight: bold;">Coomevapp</a>
-							</div>
-						</div>
-						<div class="col-sm-10">
-							<div class="mainmenu text-center">
-								<nav id="navbar-example">
-									<ul id="nav">
-                                        <li><a href="javascript:cambiaPag('rqconsulta_datos_asociado.html')">Datos Asociado</a></li>
-                                        <li><a href="javascript:cambiaPag('rqconsulta_terceros.html')">Consultar lista negra</a></li>
-                                        <li><a href="javascript:cambiaPag('addReferido.html')">Crear Referido</a></li>
-                                        <li><a href="javascript:cambiaPag('charla.html')">Consultame</a></li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>        
-		<div class="mobile-menu-area">
-			<div class="mobile-menu">
-				<nav id="dropdown">
-					<ul>
-						<li><a href="javascript:cambiaPag('rqconsulta_datos_asociado.html')">Datos Asociado</a></li>
-						<li><a href="javascript:cambiaPag('rqconsulta_terceros.html')">Consultar lista negra</a></li>
-						<li><a href="javascript:cambiaPag('addReferido.html')">Crear Referido</a></li>
-						<li><a href="javascript:cambiaPag('charla.html')">Consultame</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-        <div style="height:100px;display:block;"></div>
+      <!-- header section start -->
+      <header>
+          <div class="container">
+              <div class="row">
+                  <div class="row">
+                      <div class="logo" style="padding: 9px 13px 11px; text-align:left">
+                          <a href="index.html" style="font-size: 30px;line-height: 18px;font-weight: 400;font-family: 'OpenSans', sans-serif;color: #000; font-weight: bold;">Coomevapp</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <div class="row" style="margin-top: 41px;margin-bottom: 10px;background: #dfefd6 none repeat scroll 0 0; display:none;" id="menuBlock">
+          <div class="col-sm-12">
+              <div class="btn-group" role="group" aria-label="..." style="width: 100%; color:#000;">
+                  <button type="button" class="btn btn-success white-color" onclick="cambiaPag('rsconsulta_datos_asociado.html')" style="width: 35%;">Mis datos</button>
+                  <button type="button" class="btn btn-success white-color" onclick="cambiaPag('addReferido.html')" style="width: 30%;">Referidos</button>
+                  <button type="button" class="btn btn-success white-color" onclick="cambiaPag('charla.html')" style="width: 35%;">Consultame</button>
+              </div>
+          </div>
+      </div>
+        <div style="height:25px;display:block;"></div>
 		<!-- mobile-menu-area end -->
 		<div id="pagContainer">
 		<div class="row">
-
+            <div style="height:40px;display:block;"></div>
             <section class="contact_area section-padding" id="contact">
                 <div class="container">
                     <div class="row">
@@ -148,8 +131,8 @@
 								</div>
 								<div class="info_text">
 									<ul>
-										<li><strong>Address:</strong> Calle 13#57-50 Coomeva Sede Nacional</li>										
-										<li><strong>Phone:</strong> 3330000 </li>										
+										<li class="white-color"><strong>Direcci&oacute;n: </strong> Calle 13#57-50 Coomeva Sede Nacional</li>										
+										<li class="white-color"><strong>Tel&eacute;fono: </strong> 3330000 </li>										
 									</ul>
 								</div>
 							</div>

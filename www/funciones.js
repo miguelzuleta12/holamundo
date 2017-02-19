@@ -1,4 +1,8 @@
+var login = false;
+var pagCurrent = "index.html";
+
 function cambiaPag(pag) {
+    pagCurrent = pag;
     $.get(pag, function (data) {
         $("#pagContainer").html(data);
     });
@@ -23,9 +27,12 @@ function validateLogin(pag) {
             return
         }
     }
-
+    login = true;
+    $("#menuBlock").show();
     cambiaPag("suenos.html");
 }
+
+
 //$("#mensajeAsociado").html("");
 //return
 function validateAsso(pag) {
@@ -54,9 +61,16 @@ function validateAsso(pag) {
 
 function charla() {
     var msg = $("#msg").val();
-
-    senMsg(msg);
-
+    if (msg != "") {
+        $("#ValidaMensajeConsultame").hide();
+        //if (msg != "" || msg != "." || msg != "-" || msg != "," || msg != "1" || msg != "2" || msg != "3"
+        //|| msg != "4" || msg != "5" || msg != "6" || msg != "7" || msg != "8" || msg != "9" || msg != "*"); {
+        senMsg(msg);
+    } else {
+        //$("#ValidaMensajeConsultame").html("Debes agregar una palabra correcta");
+        $("#ValidaMensajeConsultame").show();
+        return;
+    }
 }
 var context;
 
@@ -86,8 +100,19 @@ function senMsg(msg) {
         },
         success: function (data) {
             context = data.context;
-            $("#chatMsg").prepend("<br />" + data.output.text);
+            $("#chatMsg").prepend("<br /><br /><div class='input-group borderMsgChat chatRight'><strong>Yo: </strong>" + msg + "</div>");
+            $("#chatMsg").prepend("<br /><div class='input-group borderMsgChat chatLeft'><strong>Coomeva: </strong>" + data.output.text + "</div>");
             $("#msg").val('');
         }
     });
+}
+
+function mostrarMensaje(msg, div)
+{
+    $("#" + div).html(msg);
+}
+
+function mostrarMensajeOK()
+{
+    $("#msgOk").show();
 }

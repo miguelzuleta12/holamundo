@@ -1,11 +1,20 @@
-﻿
+﻿<div class="row" style="margin-top:-25px;margin-bottom: 10px;background: #dfefd6 none repeat scroll 0 0;">
+    <div class="col-sm-12">
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default" onclick="cambiaPag('rqconsulta_terceros.html')">Consultar</button>
+            <button type="button" class="btn btn-default" onclick="cambiaPag('addReferido.html')">Agregar Referido</button>
+            <button type="button" class="btn btn-default" onclick="cambiaPag('ListaReferidos.html')">M&iacute;s referidos</button>
+        </div>
+    </div>
+</div>
 		<section class="contact_area section-padding" id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-10 col-text-center">
 						<div class="section-title text-center">
-							<h2>Consultar lista negra</h2>
-							<hr class="t_underline"/>							
+							<h2>Consultar Riesgo</h2>
+                            <hr class="t_underline" />
+                            <p>Consultar el documento de un amigo</p>							
 						</div>
 					</div>
 				</div>
@@ -22,30 +31,18 @@
 							</div>
 							<div class="col-xs-12 col-sm-4">
 								<div class="single_input">
-									<span>CADENA DE CARACTERES A SER BUSCADA</span>
+									<span>N&uacute;mero de C&eacute;dula</span>
 									<div class="input-group">
 										<input id="param1" type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-12 col-sm-4">
-								<div class="single_input">
-									<span>INDICADOR</span>
-									<div class="input-group">
-										<input id="param2" type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-4">
-								<div class="single_input">
-									<span>PORCENTAJE</span>
-									<div class="input-group">
-										<input id="param3" type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
-									</div>
-								</div>
-							</div>
 						</div>
-						<input class="text-center" type="button" value="Enviar" onclick="cambiaPag('rsconsulta_terceros.html')"/>
+                        <div id="msgOk" style="display:none; margin:20px">
+                            No hay ningun problema, quiere iniciar el proceso de <a href="#" onclick="cambiaPag('addReferido.html')">afiliaci&oacute;n</a>
+                        </div>
+                        <div id="msgNO" style="display:none">Hay un problema con ese documento, puedes decirle que se acerque a una oficina cercana.</div>
+						<input class="text-center" type="button" value="Enviar" onclick="mostrarMensajeOK()" />
 					</div>
 					
 				</div>

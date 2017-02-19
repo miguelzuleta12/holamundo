@@ -2,22 +2,27 @@
 		<section class="contact_area section-padding" id="contact">
 			<div class="container">
 				<div class="row">
+                    <h3>Tu asistente en l&iacute;nea</h3>		
+                    <hr class="t_underline" />
 					<div class="col-xs-12 col-sm-12">
+                        <div class="row" id="ValidaMensajeConsultame" style="display:none;">
+                            <div class="single_input">
+                                <span class="input-group-addon"><i class="fa fa-question-circle"></i> Caracter invalido</span>
+                            </div>
+                        </div>
 						<div class="row">
-
 							<div class="col-xs-12 col-sm-4">
 								<div class="single_input">
 									<span>Pregunta</span>
 									<div class="input-group">
-										<span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user"></i></span>
-										<input type="text" class="form-control" aria-describedby="sizing-addon2" id="msg" >
+                                        <input type="text" class="form-control" aria-describedby="sizing-addon2" id="msg">
+										<span class="input-group-addon enviarMensaje" id="sizing-addon2" onclick="charla()"><i class="fa fa-paper-plane"></i></span>										
 									</div>
-								</div>
-								
+								</div>								
 							</div>
 						</div>						
-						<input class="text-center" type="button" value="Enviar" onclick="charla()"  />						
-						<div id ="chatMsg" class="col-xs-12 col-sm-12 text-left" style="height:200px; overflow:auto">
+                        <br/>						
+						<div id ="chatMsg" class="col-xs-12 col-sm-12 text-left">
 						</div>
 					</div>
 					
